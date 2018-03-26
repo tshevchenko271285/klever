@@ -24,6 +24,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /**
 **  Custom Style For Preview Post
 */
+#header {
+    padding-top: 6em;
+}
 body:not(.is-touch) .tiles article.style-klever:hover > .image:before {
     background: #50dc75;
     opacity: .95;
@@ -36,4 +39,11 @@ body:not(.is-touch) .tiles article.style-klever:hover > .image {
 }
 .tiles article.style-klever:hover > .image {
    /* filter: blur(2px) grayscale(60%);*/
+}
+input[type="tel"],
+select {
+    height: 3em;
+}
+#footer {
+    padding-bottom: 0;
 }

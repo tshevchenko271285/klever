@@ -42,8 +42,15 @@ if (is_file( get_template_directory() . '/inc/klever-styles.php') )
  */
 if (is_file( get_template_directory() . '/inc/klever-scripts.php') )
     require get_template_directory() . '/inc/klever-scripts.php';
+
 /**
- * Custom Image Sizes
+ * Require Script
  */
 if (is_file( get_template_directory() . '/inc/klever-image-size.php') )
     require get_template_directory() . '/inc/klever-image-size.php';
+
+/**
+ * Require Script
+ */
+if (is_file( get_template_directory() . '/inc/klever-menus.php') )
+    require get_template_directory() . '/inc/klever-menus.php';
