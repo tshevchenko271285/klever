@@ -30,3 +30,20 @@ function klever_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'klever_pingback_header' );
+
+/**
+ * Require Styles
+ */
+if (is_file( get_template_directory() . '/inc/klever-styles.php') )
+    require get_template_directory() . '/inc/klever-styles.php';
+
+/**
+ * Require Script
+ */
+if (is_file( get_template_directory() . '/inc/klever-scripts.php') )
+    require get_template_directory() . '/inc/klever-scripts.php';
+/**
+ * Custom Image Sizes
+ */
+if (is_file( get_template_directory() . '/inc/klever-image-size.php') )
+    require get_template_directory() . '/inc/klever-image-size.php';
